@@ -1,0 +1,193 @@
+*, ::before, ::after{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+#main-project{
+  font-family: sans-serif;
+}
+
+#heading{
+    display: flex;
+    background-color: rgb(10, 10, 10);
+    padding: 20px 10px;
+    width: 100%;
+    justify-content: end;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#heading a{
+    margin: 7px 15px;
+    color: White;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-style: italic;
+    font-family: sans-serif;
+}
+
+#welcome-section{
+    background-color: rgb(61, 61, 94);
+    height: 100vh;
+}
+
+#welcome-section article h1{
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#welcome-section article p{
+    margin-top: 20px;
+    color: dodgerblue;
+    font-weight: bold;
+}
+
+#welcome-section article{
+    display: block;
+    text-align: center;
+    width: 50%;
+    font-size: xx-large;
+    font-style: italic;
+    position: absolute;
+    top: 40%;
+    left: 25%;
+}
+
+#projects{
+    background-color: rgb(59, 59, 59);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#projects article{
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 3%;
+  margin-bottom: 2%;
+  font-size: 2rem;
+  font-style: italic;
+  color: white;
+  border-bottom: 2px solid white; 
+}
+
+#projects .project-grid img{
+    width: 500px;
+    height: 400px;
+    margin: 20px 40px;
+}
+
+#projects .project-grid{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+}
+
+#projects .project-grid p{
+    color: wheat;
+    text-align: center;
+    text-decoration: none;
+}
+
+.show{
+    width: 7%;
+    background-color:  rgb(61, 61, 94);
+    text-align: center;
+    padding: 10px;
+    margin: 15px auto;
+    font-style: italic;
+    color: black;
+   
+}
+
+.show:hover{
+    background-color: rgb(78, 77, 77);
+    color: black;
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 5px;
+    border: 4px solid;
+    border-color:  rgb(61, 61, 94);
+}
+
+#section-contact{
+    background-color: rgb(61, 61, 94);
+    height: 90vh;
+}
+
+#section-contact div{
+    display: block;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    top: 40%;
+
+}
+
+#section-contact div h1{
+    font-size: 50px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#section-contact div p{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#section-contact .social{
+    margin-top: 50px;
+    display:flex;  
+    justify-content: center;
+    justify-content: space-around;
+    font-size: 15px; 
+    font-style: italic;
+}
+
+.social a{
+    color: black;
+}
+
+.social a:hover{
+    margin-top: 7px;
+    font-weight: bolder;
+}
+
+footer{
+    background-color: rgb(61, 61, 94);
+    padding: 25px;
+    text-align: center;
+    border-top: 3px solid brown;
+    font-size: 20px;
+    font-style: italic;
+}
+
+@media(min-width: 300px){
+
+    #main-project{
+        max-width: 100%;
+    }
+
+    #section-About{
+        max-width: 100%;
+    }
+
+    #welcome-section{
+        max-width: 100%;
+    }
+}
